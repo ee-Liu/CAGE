@@ -119,6 +119,8 @@ def get_args_parser():
                         help="label noise ratio to flip")
     parser.add_argument('--poly_noise_scale', default=0.4, type=float,
                         help="poly noise scale to shift and scale")
+    #UNUSED
+    parser.add_argument('--use_angle_loss',default=False,type=bool)
 
     #swin_transformer
     parser.add_argument('--use_checkpoint', default=True, type=bool)
